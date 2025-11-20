@@ -1,4 +1,5 @@
 Customer Shopping Behavior Analysis – Data Analytics Project
+
 📌 Overview
 
 This project analyzes customer shopping behavior using a structured data analytics workflow. It covers data loading, exploratory data analysis (EDA), data cleaning, SQL-based insights, and interactive dashboard development. The goal is to uncover patterns in spending, product preferences, customer demographics, and shopping trends, and present the findings through visual dashboards and a final report.
@@ -145,12 +146,14 @@ Execute the SQL upload cell to load the dataset
 
 Open the .pbix file in Power BI Desktop
 
-Refresh to load updated data
+Refresh to load
+<img width="1333" height="724" alt="Screenshot 2025-11-20 194424" src="https://github.com/user-attachments/assets/d56994a1-6c53-465f-b373-d0b2ba00b71c" />
+ updated data
 
 6. View the Report & Presentation
 
 Open the final report.pdf / report.docx
-[Customer_dashboard_pdf.pdf](https://github.com/user-attachments/files/23658232/Customer_dashboard_pdf.pdf)
+
 
 View the Gamma presentation link (included in the repo)
 
