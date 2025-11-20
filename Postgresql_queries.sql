@@ -2,6 +2,8 @@
 select gender, SUM (purchase_amount) as revenue
 from customer
 group by gender
+
+	
 --Q2. Which customers used a discount but still spent more than the average purchase amount?
 select customer_id, purchase_amount
 from customer
@@ -58,6 +60,8 @@ from customer
 select customer_segment, count(*) as "Number of Customers"
 from customer_type
 group by customer_segment
+
+	
 --Q8. What are the top 3 most purchased products within each category?
 with item_counts as (
 select category,
@@ -71,6 +75,8 @@ group by category, item_purchased
 select item_rank,category,item_purchased,total_orders
 from item_counts
 where item_rank<= 3;
+
+
 --Q9. Are customers who are repeat buyers (more than 5 previous purchases) also likely to subscribe?
 select subscription_status,
 count(customer_id) as repeat_buyers
@@ -78,9 +84,12 @@ from customer
 where previous_purchases > 5
 group by subscription_status
 
+	
+
 --Q10. What is the revenue contribution of each age group?
 select age_group,
 SUM(purchase_amount) as total_revenue
 from customer
 group by age_group
+
 order by total_revenue desc;
